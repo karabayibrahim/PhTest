@@ -2,9 +2,15 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - CubeController
+    - Enemy
+    - PlayerController
+    - PlayerData
+    - PlayerTypeDatas
     - ReferansObject
     - ServerManager
     - UIManager
+    DOTween.dll:
+    - DG.Tweening.Core.DOTweenSettings
     PhotonUnityNetworking.Demos.dll:
     - Photon.Pun.Demo.Asteroids.Asteroid
     - Photon.Pun.Demo.Asteroids.Bullet
@@ -23,6 +29,14 @@ ScriptsOnlyBuild:
     - Photon.Pun.ServerSettings
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -80,59 +94,69 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11326}
+      Script: {instanceID: 11338}
     - Class: 114
-      Script: {instanceID: 11328}
+      Script: {instanceID: 11340}
     - Class: 114
-      Script: {instanceID: 11362}
+      Script: {instanceID: 11374}
     - Class: 114
-      Script: {instanceID: 11542}
+      Script: {instanceID: 11468}
+    - Class: 114
+      Script: {instanceID: 11522}
     - Class: 114
       Script: {instanceID: 11566}
     - Class: 114
-      Script: {instanceID: 12126}
+      Script: {instanceID: 11580}
     - Class: 114
-      Script: {instanceID: 12230}
+      Script: {instanceID: 11592}
     - Class: 114
-      Script: {instanceID: 12324}
+      Script: {instanceID: 11838}
     - Class: 114
-      Script: {instanceID: 12606}
+      Script: {instanceID: 12168}
     - Class: 114
-      Script: {instanceID: 12696}
+      Script: {instanceID: 12178}
     - Class: 114
-      Script: {instanceID: 12802}
+      Script: {instanceID: 12274}
     - Class: 114
-      Script: {instanceID: 12880}
+      Script: {instanceID: 12370}
     - Class: 114
-      Script: {instanceID: 12964}
+      Script: {instanceID: 12664}
     - Class: 114
-      Script: {instanceID: 13056}
+      Script: {instanceID: 12754}
     - Class: 114
-      Script: {instanceID: 13152}
+      Script: {instanceID: 12788}
     - Class: 114
-      Script: {instanceID: 13168}
+      Script: {instanceID: 12866}
     - Class: 114
-      Script: {instanceID: 13442}
+      Script: {instanceID: 12946}
     - Class: 114
-      Script: {instanceID: 13464}
+      Script: {instanceID: 13032}
     - Class: 114
-      Script: {instanceID: 13474}
+      Script: {instanceID: 13124}
     - Class: 114
-      Script: {instanceID: 13632}
+      Script: {instanceID: 13220}
     - Class: 114
-      Script: {instanceID: 14082}
+      Script: {instanceID: 13238}
     - Class: 114
-      Script: {instanceID: 14184}
+      Script: {instanceID: 13520}
     - Class: 114
-      Script: {instanceID: 14222}
+      Script: {instanceID: 13542}
     - Class: 114
-      Script: {instanceID: 14234}
+      Script: {instanceID: 13544}
     - Class: 114
-      Script: {instanceID: 15866}
+      Script: {instanceID: 13554}
     - Class: 114
-      Script: {instanceID: 15874}
+      Script: {instanceID: 13722}
     - Class: 114
-      Script: {instanceID: 20264}
+      Script: {instanceID: 14178}
+    - Class: 114
+      Script: {instanceID: 14280}
+    - Class: 114
+      Script: {instanceID: 14320}
+    - Class: 114
+      Script: {instanceID: 14332}
+    - Class: 114
+      Script: {instanceID: 30052}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -156,6 +180,8 @@ ScriptsOnlyBuild:
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 221
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -246,6 +272,12 @@ ScriptsOnlyBuild:
     className: UserIdField
   - hash:
       serializedVersion: 2
+      Hash: 041f57e951632dc7a3ed78f447d37440
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CubeController
+  - hash:
+      serializedVersion: 2
       Hash: 11bdd61587db747672b66c52442395d8
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
@@ -276,6 +308,12 @@ ScriptsOnlyBuild:
     className: ChatGui
   - hash:
       serializedVersion: 2
+      Hash: c3d314515218785285b7f4b4ddd229e3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerData
+  - hash:
+      serializedVersion: 2
       Hash: 74c875e0f15c48e0a55f06093aa93e15
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
@@ -300,6 +338,12 @@ ScriptsOnlyBuild:
     className: PlayerAnimatorManager
   - hash:
       serializedVersion: 2
+      Hash: 0766e79154ee89eb272838eafda57155
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UIManager
+  - hash:
+      serializedVersion: 2
       Hash: c656dcc13ae391b68d594cc8f9c590b0
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
@@ -312,7 +356,7 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
-      Hash: 2b1d1de79e4d31f1861f586502176c81
+      Hash: 7c68158a95c45cc54447228fadea4ee3
     assemblyName: PhotonUnityNetworking.dll
     namespaceName: Photon.Pun
     className: PhotonAnimatorView
@@ -424,6 +468,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 359eb401e40de357fdb67781c63b4830
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerTypeDatas
   - hash:
       serializedVersion: 2
       Hash: ba160f8fe96116c81151a9a24d7d9f4f
@@ -564,6 +614,12 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
+      Hash: 85e31dfedef7ea6f678725bd597c7fb1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerController
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: PhotonUnityNetworking.Utilities.dll
     namespaceName: Photon.Pun.UtilityScripts
@@ -690,6 +746,12 @@ ScriptsOnlyBuild:
     className: EventSystemSpawner
   - hash:
       serializedVersion: 2
+      Hash: b5fc3843e35dd6d09a719cb0d10ff4a5
+    assemblyName: DemiLib.dll
+    namespaceName: DG.DemiLib.External
+    className: DeHierarchyComponent
+  - hash:
+      serializedVersion: 2
       Hash: 57d2b3ca58a430f7cf319bb757c1f0f5
     assemblyName: PhotonUnityNetworking.Utilities.dll
     namespaceName: Photon.Pun.UtilityScripts
@@ -790,6 +852,18 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
     className: CurrentRoomPropertiesListedInLobbyProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 704dcd31abc789439bc3f3cd10b58c2b
+    assemblyName: DOTween.dll
+    namespaceName: DG.Tweening.Core
+    className: DOTweenComponent
+  - hash:
+      serializedVersion: 2
+      Hash: 179648033371456981a3c08cb9f47477
+    assemblyName: DOTween.dll
+    namespaceName: DG.Tweening.Core
+    className: DOTweenSettings
   - hash:
       serializedVersion: 2
       Hash: d329540117e6b6c523bded68046af505
@@ -1080,6 +1154,12 @@ ScriptsOnlyBuild:
     className: CameraWork
   - hash:
       serializedVersion: 2
+      Hash: e30cc9a3db75cc2450c5bb659b737a98
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ReferansObject
+  - hash:
+      serializedVersion: 2
       Hash: e10400e84c8c573b2b5e4088aca77453
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.PunBasics
@@ -1108,6 +1188,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextMeshProUGUI
+  - hash:
+      serializedVersion: 2
+      Hash: 7d2f283ab75f4669e023370fdc320b19
+    assemblyName: DOTweenPro.dll
+    namespaceName: DG.Tweening
+    className: DOTweenPath
+  - hash:
+      serializedVersion: 2
+      Hash: d452b4ce4b4cca771c54091cc2623c68
+    assemblyName: DOTweenPro.dll
+    namespaceName: DG.Tweening
+    className: DOTweenVisualManager
   - hash:
       serializedVersion: 2
       Hash: 7221ab9307aaa6b66a416e2e4561f420
@@ -1216,6 +1308,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: MarkerTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 450cab4c9d2f461e4647e7d66d4d559c
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: DG.Tweening
+    className: DOTweenAnimation
   - hash:
       serializedVersion: 2
       Hash: 800c50acba124432abb4cf0d47202e06
@@ -1476,23 +1574,11 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: e30cc9a3db75cc2450c5bb659b737a98
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: ReferansObject
-  - hash:
-      serializedVersion: 2
-      Hash: 0766e79154ee89eb272838eafda57155
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: UIManager
-  - hash:
-      serializedVersion: 2
-      Hash: 041f57e951632dc7a3ed78f447d37440
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CubeController
+    className: Enemy
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/PC/Desktop/PhotonProject.exe
+  playerPath: C:/Users/PC/Desktop/RTSTest/PhotonProject.exe

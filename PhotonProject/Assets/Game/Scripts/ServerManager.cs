@@ -61,6 +61,6 @@ public class ServerManager : MonoBehaviourPunCallbacks
     private void StartRoom()
     {
         ReferansObject.Instance.UIManager.LobyPanel.SetActive(false);
-        PhotonNetwork.Instantiate("Cube", new Vector3(0,0.5f,0), Quaternion.identity,0,null);
+        PhotonNetwork.Instantiate("Player", new Vector3(0,0.5f,0), Quaternion.identity,0,null);
     }
 }

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f90a6df00c1f76f4d8b07aa48ab40215, type: 3}
+  m_Name: "R\u0131fleData"
+  m_EditorClassIdentifier: 
+  PlayerType: 0
+  MyModel: {fileID: 319473576234192279, guid: 695afc6e2eecd814685ca685871e7a56, type: 3}
+  WalkSpeed: 5
+  AnimController: {fileID: 9100000, guid: 024284e4a3e91144196fb99896ce6140, type: 2}
+  ShootController: {fileID: 22100000, guid: 3c290586767cfd5478ef40b593ec72e2, type: 2}

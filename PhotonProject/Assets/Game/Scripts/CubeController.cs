@@ -41,6 +41,7 @@ public class CubeController : MonoBehaviour
             {
                 transform.Translate(Speed * Time.deltaTime, 0, 0);
             }
+
         }
        
     }

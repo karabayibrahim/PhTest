@@ -78,7 +78,7 @@ namespace Photon.Pun
 
         private bool TriggerUsageWarningDone;
         
-        private Animator m_Animator;
+        public Animator m_Animator;
 
         private PhotonStreamQueue m_StreamQueue = new PhotonStreamQueue(120);
 
@@ -122,6 +122,7 @@ namespace Photon.Pun
         private void Awake()
         {
             this.m_Animator = GetComponent<Animator>();
+            //this.m_Animator = GetComponentInChildren<Animator>();
         }
 
         private void Update()
