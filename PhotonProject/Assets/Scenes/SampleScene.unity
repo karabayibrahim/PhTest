@@ -978,6 +978,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TS_militias_desert_A
       objectReference: {fileID: 0}
+    - target: {fileID: 169224, guid: 38515754d2319ee44a0f3db2b5cdc71f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 499978, guid: 38515754d2319ee44a0f3db2b5cdc71f, type: 3}
       propertyPath: m_RootOrder
       value: 7
